@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suchita Bhosale | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Suchita Bhosale</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificate.html">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section home">
+    <div class="hero-slider">
+        <div class="slide active">
+            <h1>Hello, I'm <span>Suchita Bhosale</span></h1>
+            <p>Computer Engineering Student | AI & Web Developer</p>
+            <div class="hero-buttons">
+                <a href="Resume_New.pdf" download class="btn primary">Download Resume</a>
+                <button onclick="printPortfolio()" class="btn secondary">Print Portfolio</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h1>Passionate About <span>AI & Innovation</span></h1>
+            <p>Exploring the frontiers of technology and creating solutions</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="slide">
+            <h1>Building the <span>Future</span></h1>
+            <p>One line of code at a time</p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn primary">My Skills</a>
+                <a href="#experience" class="btn secondary">Experience</a>
+            </div>
+        </div>
+    </div>
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Scroll Down</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <div class="profile-photo-container">
+            <div class="photo-frame">
+                <img src="Photo.JPG" alt="Suchita Bhosale" class="profile-photo">
+                <div class="photo-overlay">
+                    <div class="floating-elements">
+                        <div class="floating-icon">🚀</div>
+                        <div class="floating-icon">💻</div>
+                        <div class="floating-icon">🤖</div>
+                        <div class="floating-icon">⚡</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <p>
+                I am a highly motivated Computer Engineering student pursuing my Bachelor’s degree
+                at Sandip University, Nashik. I am passionate about Web Development, Artificial
+                Intelligence, and innovative software solutions. I enjoy applying theoretical
+                knowledge to real-world problems and continuously improving my technical skills.
+            </p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">8.93</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Technical & Professional Skills</h2>
+    <ul class="skills">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Web Development</li>
+        <li>AI & Machine Learning (Basics)</li>
+        <li>Prompt Engineering</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+        <li>Communication Skills</li>
+    </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <h2>Internship Experience</h2>
+    <div class="card">
+        <h3>Internship Student</h3>
+        <p><b>Rahitech Solution, Baramati</b> (Jun 2022 – Aug 2022)</p>
+        <p>
+            Worked on a Travel Management System using web development technologies.
+            Gained hands-on experience in frontend development and project coordination.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <h2>Education</h2>
+    <div id="education-container">
+        <div class="card education-card">
+            <div class="card-header">
+                <h3>Bachelor of Computer Science & Engineering</h3>
+               
+            </div>
+            <p>Sandip University, Nashik (Expected 2026)</p>
+            <p>CGPA: <b>8.93</b></p>
+            <p>Participated in hackathons, mentorship programs, workshops & seminars.</p>
+        </div>
+
+        <div class="card education-card">
+            <div class="card-header">
+                <h3>Diploma in Computer Engineering</h3>
+               
+            </div>
+            <p>Vidya Pratishthan’s Polytechnic College, Indapur (2023)</p>
+            <p>Percentage: <b>78.71%</b></p>
+            <p>Final Year Project: IoT-based Color Sorting Machine</p>
+        </div>
+    </div>
+
+    <!-- Hidden education form template -->
+    <div id="education-form-template" style="display: none;">
+        <div class="card education-form">
+            <h3>Add/Edit Education</h3>
+            <form class="education-form-content">
+                <div class="form-group">
+                    <input type="text" name="degree" placeholder="Degree/Program Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="institution" placeholder="Institution/University Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="duration" placeholder="Duration/Year (e.g., Expected 2026)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="grade" placeholder="Grade/CGPA (e.g., CGPA: 8.93)" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="description" placeholder="Additional details (projects, achievements, etc.)" rows="3"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Save</button>
+                    <button type="button" onclick="cancelEducationForm()" class="btn secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Location</h3>
+                <p>Indapur, Maharashtra, India</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04703893152!2d74.2835!3d18.1133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3c7b0b0b0b0b1%3A0x3bc3c7b0b0b0b0b1!2sIndapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+                        width="100%"
+                        height="200"
+                        style="border:0; border-radius: 10px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p><a href="tel:+919503131822">+91 9503131822</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:Suchitabhosale2004@gmail.com">Suchitabhosale2004@gmail.com</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/suchita-bhosale-ba5941221/" target="_blank">View Profile</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Languages</h3>
+                <p>Marathi (Native), Hindi, English</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Message</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
